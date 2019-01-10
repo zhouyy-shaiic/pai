@@ -33,5 +33,10 @@
     <name>mapreduce.job.emit-timeline-data</name>
     <value>true</value>
   </property>
+
+  <property>
+      <name>yarn.app.mapreduce.am.staging-dir</name>
+      <value>/tmp/hadoop-yarn/staging</value>
+  </property>
   
 </configuration>

@@ -124,17 +124,12 @@
 
     <property>
         <name>yarn.node-labels.fs-store.root-dir</name>
-        <value>hdfs://{HDFS_ADDRESS}:9000/yarn/node-labels</value>
+        <value>file:///nfs/sharedir/yarn/node-labels</value>
     </property>
     
     <property>
         <name>yarn.node-labels.enabled</name>
         <value>true</value>
-    </property>
-
-    <property>
-        <name>yarn.app.mapreduce.am.staging-dir</name>
-        <value>/tmp/hadoop-yarn/staging</value>
     </property>
 
     <property>
