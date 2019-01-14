@@ -54,6 +54,9 @@ spec:
           name: hadoop-tmp-storage
         - mountPath: /nfs/sharedir
           name: nfs-storage
+        command:
+          - sleep
+          - infinity
         readinessProbe:
           exec:
             command:
