@@ -65,6 +65,8 @@ spec:
           name: hadoop-jobhistory-config-volume
         - mountPath: /var/lib/hadoopdata
           name: hadoop-tmp-storage
+        - mountPath: /nfs/sharedir
+          name: nfs-storage
         readinessProbe:
           exec:
             command:
@@ -88,3 +90,6 @@ spec:
       - name: hadoop-tmp-storage
         hostPath:
           path: {{ cluster_cfg["cluster"]["common"][ "data-path" ] }}/hadooptmp/jobhistory
+      - name: nfs-storage
+        hostPath:
+          path: /nfs/sharedir

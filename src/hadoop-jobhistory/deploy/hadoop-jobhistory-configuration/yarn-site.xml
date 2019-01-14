@@ -75,7 +75,7 @@
 
     <property>
       <name>yarn.nodemanager.remote-app-log-dir</name>
-       <value>/sys/logs</value>
+       <value>file:///nfs/sharedir/sys/logs</value>
     </property>
 
     <property>  
