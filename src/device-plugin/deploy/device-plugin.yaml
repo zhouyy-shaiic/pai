@@ -18,7 +18,7 @@ data:
       ]
     }
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
   name: k8s-host-device-plugin-daemonset
